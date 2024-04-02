@@ -4,6 +4,7 @@ import ssl
 import json
 import time
 import uuid
+import os
 
 import websockets
 from loguru import logger
@@ -65,7 +66,11 @@ async def connect_to_wss(user_id):
 
 
 async def main():
-    _user_id = ''
+    config_path = os.path.join(os.path.dirname(__file__), "config.json")
+    with open(config_path) as f:
+        config = json.load(f)
+
+    _user_id = config['user_id']
     await connect_to_wss(_user_id)
 
 
