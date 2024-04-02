@@ -6,13 +6,13 @@
 
 1. เปิด VPS เครื่องที่ต้องการรัน
 
-2. ติดตั้ง [Python](https://www.python.org/downloads/) ถ้ามีแล้วข้ามไปได้
+2. ติดตั้ง [Python](https://www.python.org/downloads/) `apt install -y python3 python3-venv python3-pip` ถ้ามีแล้วข้ามไปได้
 
 3. ติดตั้ง [Git](https://git-scm.com/downloads) ถ้ามีแล้วข้ามไปได้
 
 4. ติดตั้ง Screen `apt install -y screen` ถ้ามีแล้วข้ามไปได้
 
-5. พิมพ์คำสั่ง `pip3 install loguru`
+5. พิมพ์คำสั่ง `pip install loguru`
 
 6. `git clone https://github.com/dekkeng/grass-auto.git && cd grass-auto`
 
