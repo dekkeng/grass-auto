@@ -18,7 +18,9 @@
 
 7. `screen -S grass`
 
-8. `cp config.txt.sample config.txt && nano config.txt` แก้ไข USER_ID เป็น user grass วิธีดูเลข ให้เปิดเข้าเว็บ grass ในเครื่อง login ให้เรียบร้อย แล้วกด F12 (Console) รัน `localStorage.getItem('userId')` จะได้เลข USER ID ที่ต้องนำมาใส่
+8. `cp config.txt.sample config.txt && nano config.txt` 
+
+9. แก้ไข USER_ID เป็น user grass วิธีดูเลข ให้เปิดเข้า[เว็บ Grass](https://app.getgrass.io/dashboard) ในเครื่อง login ให้เรียบร้อย แล้วกด F12 (Console) รัน `localStorage.getItem('userId')` จะได้เลข USER ID ที่ต้องนำมาใส่
 
 9. `python3 main.py`
 
