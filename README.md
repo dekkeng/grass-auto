@@ -1,5 +1,7 @@
 # Grass on VPS
 
+0. [Register Grass](https://app.getgrass.io/register/?referralCode=UNgwK9yHCn4BS3c)
+
 -------------------
 วิธีการติดตั้ง
 -------------------
