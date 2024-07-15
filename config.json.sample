@@ -1,5 +1,6 @@
 {
     "user_id": "00000000-0000-0000-0000-0000000xxx",
+    "concurrent": 1,
     "proxy_list": [
         "socks5://user1:pwd1@ip1:port1",
         "socks5://user2:pwd2@ip2:port2"

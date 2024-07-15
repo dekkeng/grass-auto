@@ -81,8 +81,9 @@ async def main():
 
     _user_id = config['user_id']
     all_proxies = config['proxy_list']
+    _concurrent = config['concurrent']
 
-    active_proxies = random.sample(all_proxies, len(all_proxies))  # Number of proxies to use
+    active_proxies = random.sample(all_proxies, _concurrent)  # Number of proxies to use
     tasks = {asyncio.create_task(connect_to_wss(proxy, _user_id)): proxy for proxy in active_proxies}
 
     while True:
