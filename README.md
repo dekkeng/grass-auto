@@ -39,12 +39,14 @@ git clone https://github.com/dekkeng/grass-auto.git && cd grass-auto
 cp config.json.sample config.json && nano config.json
 ```
 เอา Grass UID จากข้อ 4 แปะตรง userid
+concurrent คือจำนวนที่จะรันพร้อมกัน
 และเอารายการ Proxies จากข้อ 3 มาแปะใน proxy list
 โดยให้ format เป็นแบบ config คือ
 "socks5://<รายการจากข้อ 3>" ใช้ replace all เพิ่มไปข้างหน้า ครอบด้วย "" และ คั่นด้วย ,
 ```
 {
     "user_id": "00000000-0000-0000-0000-0000000xxx",
+    "concurrent": 1,
     "proxy_list": [
         "socks5://user1:pwd1@ip1:port1",
         "socks5://user2:pwd2@ip2:port2"
