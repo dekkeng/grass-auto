@@ -68,8 +68,8 @@ async def connect_to_wss(socks5_proxy, user_id):
         except Exception as e:
             logger.error(f"Error with proxy {socks5_proxy}: {str(e)}")
             if any(error_msg in str(e) for error_msg in ["[SSL: WRONG_VERSION_NUMBER]", "invalid length of packed IP address string", "Empty connect reply", "Device creation limit exceeded", "sent 1011 (internal error) keepalive ping timeout; no close frame received"]):
-                logger.info(f"Removing error proxy from the list: {socks5_proxy}")
-                remove_proxy_from_list(socks5_proxy)
+                # logger.info(f"Removing error proxy from the list: {socks5_proxy}")
+                # remove_proxy_from_list(socks5_proxy)
                 return None  # Signal to the main loop to replace this proxy
             else:
                 continue  # Continue to try to reconnect or handle other errors
